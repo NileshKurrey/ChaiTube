@@ -13,12 +13,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         showLoader()
         const intialData = await fetchData(1)
-        // hideLoader()
+        hideLoader()
         loadedVidoes.push(intialData.data)
         ShowContent(intialData.data)
-        console.log(intialData)
         createBtn()
-        isbutton = true
     } catch (error) {
         console.error(error)
     } 
@@ -52,7 +50,6 @@ async function fetchData(page) {
         const response = await fetch(url, options);
         let data = await response.json();
         loadedVidoes.push(data.data.data)
-        console.log(loadedVidoes)
         return data.data
       
     } catch (error) {
@@ -67,7 +64,6 @@ async function fetchData(page) {
 function ShowContent(data) {
 
     data.forEach((element) => {
-        console.log(element)
         // Create NEW elements for each iteration
         const videoCard = document.createElement('div');
         videoCard.className = 'video-card';
