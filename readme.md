@@ -58,8 +58,7 @@
 
 ```http
 GET https://api.freeapi.app/api/v1/public/youtube/videos?page=1&limit=10&query=javascript&sortBy=mostLiked
-
-```http
+```
 
 | 🔑 Parameter | 🏷️ Type    | 📖 Description                    |
 | :-------- | :------- | :-------------------------------- |
