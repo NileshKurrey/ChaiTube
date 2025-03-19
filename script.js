@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         showLoader()
         const intialData = await fetchData(1)
-        hideLoader()
+        // hideLoader()
         loadedVidoes.push(intialData.data)
         ShowContent(intialData.data)
         console.log(intialData)
@@ -21,9 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         isbutton = true
     } catch (error) {
         console.error(error)
-    } finally {
-       
-    }
+    } 
 });
 
 
