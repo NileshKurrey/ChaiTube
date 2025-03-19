@@ -69,7 +69,7 @@ GET https://api.freeapi.app/api/v1/public/youtube/videos?page=1&limit=10&query=j
 
 ## 🎥 Demo
 
-Vercel link - https://random-quote-generator-nine-sandy.vercel.app/
+Vercel link - https://chai-tube-nileshkurreys-projects.vercel.app/
 
 ---
 
